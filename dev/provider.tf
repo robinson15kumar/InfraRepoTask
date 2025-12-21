@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "vinod_main_rg"
-    storage_account_name = "vinodstoragemaina" 
+    resource_group_name  = "robin_main_rg"
+    storage_account_name = "robinstoragemaina" 
     container_name       = "container22"         # Can be passed via `-backend-config=`"container_name=<container name>"` in the `init` command.
-    key                  = "manual.terraform.tfstate"
+    key                  = "my.terraform.tfstate"
   }
 
 }
